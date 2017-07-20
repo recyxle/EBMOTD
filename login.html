@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+		
+		   <head>
+		<title>Admin Login Page - Evil Burgers Gaming</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+    </head>
+			<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <body>
+        <h1>Admin Login</h1>
+        <form name="login">
+            Username<input type="text" name="userid"/>
+            Password<input type="password" name="pswrd"/>
+            <input type="button" onclick="check(this.form)" value="Login"/>
+            <input type="reset" value="Cancel"/>
+        </form>
+        <script language="javascript">
+            function check(form) { /*function to check userid & password*/
+                /*the following code checkes whether the entered userid and password are matching*/
+                if(form.userid.value == "admin" && form.pswrd.value == "password") {
+                    window.open('admin.html')/*opens the target page while Id & password matches*/
+                }
+                else {
+                    alert("Wrong Password or Username")/*displays error message*/
+                }
+            }
+        </script>
+    </body>
+	<!-- Footer -->
+					<ul class="icons">
+							<li><a href="mailto:evilburgersserver@gmail.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+						</ul>
+						<a href="owner.html" class="button">Owner Login</a>
+						<a href="index.html" class="button">Menu</a>
+						<p><i>Site Last Updated 2:51 ~ 07/20/2017</i><p>
+						
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
